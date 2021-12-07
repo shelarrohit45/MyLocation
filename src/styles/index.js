@@ -2,6 +2,7 @@ import {
   StyleSheet,
 } from 'react-native';
 
+
 const styles = StyleSheet.create({
     modalView: {
       backgroundColor: 'rgba(0,0,0,0.2)',
@@ -40,10 +41,11 @@ const styles = StyleSheet.create({
     },
     cardHeader: {flexDirection: 'row', marginVertical: 10},
     avatar: {
-      paddingVertical: 10,
-      paddingHorizontal: 15,
-      backgroundColor: '#cdcdcd',
-      borderRadius: 50,
+        height: 50,
+        width: 50,
+        alignItems:'center',
+        justifyContent:'center',
+      borderRadius: 60,
     },
     avatarText: {fontSize: 20, fontWeight: 'bold'},
     cardBody: {flex: 1, marginLeft: 10},

@@ -114,13 +114,16 @@ export default function HomeScreen({ navigation }) {
       });
       setData(newData);
     };
+
+
+var ColorCode = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
   
     const renderItem = ({item}) => (
       <Pressable onPress={() => ExpandCard(item)}>
         <View style={styles.mainCard}>
           <View style={styles.cardHeader}>
-            <View style={styles.avatar}>
-              <Text style={styles.avatarText}>W</Text>
+            <View backgroundColor={ColorCode} style={styles.avatar}>
+              <Text style={styles.avatarText}>{item.title.charAt(0)}</Text>
             </View>
             <View style={styles.cardBody}>
               <Text style={styles.title}>{item.title}</Text>
